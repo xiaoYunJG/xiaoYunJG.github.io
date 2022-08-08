@@ -103,7 +103,7 @@ theme: butterfly
 deploy:
   type: 'git'
   repository: 'https://github.com/xiaoYunJG/xiaoYunJG.github.io.git'
-  branch: branch
+  branch: main
 
 search:
   path: search.xml

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="蓝紫色抽象技术博客首页背景">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#16213e"/><stop offset=".55" stop-color="#2f6fed"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop stop-color="#c4b5fd" stop-opacity=".75"/><stop offset="1" stop-color="#c4b5fd" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1210" cy="180" r="400" fill="url(#glow)"/>
+  <circle cx="360" cy="720" r="310" fill="#38bdf8" opacity=".16"/>
+  <path d="M0 650C260 540 410 790 690 660s430-200 910-70v310H0Z" fill="#0f172a" opacity=".22"/>
+  <g fill="none" stroke="#fff" stroke-opacity=".18"><path d="M140 210h270l115 120h260"/><path d="M870 250h230l90-90h240"/><path d="M1040 620h190l120-130h160"/></g>
+  <g fill="#fff" fill-opacity=".48"><circle cx="140" cy="210" r="7"/><circle cx="410" cy="210" r="7"/><circle cx="785" cy="330" r="7"/><circle cx="870" cy="250" r="7"/><circle cx="1430" cy="160" r="7"/><circle cx="1040" cy="620" r="7"/></g>
+</svg>

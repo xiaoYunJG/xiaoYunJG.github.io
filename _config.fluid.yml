@@ -1,0 +1,136 @@
+# ============================================================
+# Fluid 主题个性化配置
+# 个人资料与站点地址请优先在 _config.yml 顶部修改。
+# 不修改 node_modules 中的主题文件；本文件会覆盖主题默认配置。
+# ============================================================
+
+# 配置用户覆盖的静态资源（项目要求：通过 Fluid 配置引入）
+custom_css:
+  - /css/custom.css
+custom_js:
+  - /js/custom.js
+
+# 外观：light / dark / auto，默认跟随系统；Fluid 会在导航栏显示切换按钮。
+dark_mode:
+  enable: true
+  default: auto
+
+fun_features:
+  typing:
+    enable: true
+    typeSpeed: 62
+    cursorChar: '|'
+    loop: false
+    scope:
+      - home
+
+navbar:
+  blog_title: 我的技术博客
+  ground_glass:
+    enable: true
+    px: 3
+    alpha: 0.72
+  menu:
+    - { key: '首页', link: '/', icon: 'iconfont icon-home-fill' }
+    - { key: '归档', link: '/archives/', icon: 'iconfont icon-archive-fill' }
+    - { key: '分类', link: '/categories/', icon: 'iconfont icon-category-fill' }
+    - { key: '标签', link: '/tags/', icon: 'iconfont icon-tags-fill' }
+    - { key: '关于', link: '/about/', icon: 'iconfont icon-user-fill' }
+
+index:
+  banner_img: /img/home-banner.svg
+  banner_img_height: 100
+  banner_mask_alpha: 0.34
+  slogan:
+    enable: true
+    text: '记录编程、算法、Go、前端与人工智能学习'
+    api:
+      enable: false
+  post_meta:
+    date: true
+    category: true
+    tag: true
+  post_url_target: _self
+
+# 页面 Banner 统一使用本地占位图
+archive:
+  banner_img: /img/page-banner.svg
+  banner_img_height: 60
+  banner_mask_alpha: 0.32
+category:
+  banner_img: /img/page-banner.svg
+  banner_img_height: 60
+  banner_mask_alpha: 0.32
+tag:
+  banner_img: /img/page-banner.svg
+  banner_img_height: 60
+  banner_mask_alpha: 0.32
+about:
+  banner_img: /img/page-banner.svg
+  banner_img_height: 60
+  banner_mask_alpha: 0.32
+  avatar: /img/avatar.svg
+  name: yfx
+  intro: '记录编程、算法、Go、前端与人工智能学习'
+  icons:
+    - { class: 'iconfont icon-github-fill', link: 'https://github.com/xiaoYunJG/wlb_blog', tip: 'GitHub' }
+    - { class: 'iconfont icon-mail-fill', link: 'mailto:1684054261@qq.com', tip: 'Email' }
+
+post:
+  banner_img: /img/post-banner.svg
+  banner_img_height: 60
+  banner_mask_alpha: 0.36
+  default_index_img: /img/post-cover.svg
+  meta:
+    date: true
+    wordcount: true
+    min2read: true
+  toc:
+    enable: true
+    headingSelector: h1,h2,h3,h4,h5,h6
+    collapseDepth: 0
+    placement: right
+  copyright:
+    enable: false
+  prev_next:
+    enable: true
+  comments:
+    enable: false
+
+# 代码复制、语言标签与行号
+code:
+  copy_btn: true
+  language:
+    enable: true
+    default: TEXT
+  highlight:
+    enable: true
+    line_number: true
+    lib: highlightjs
+
+# 搜索：Fluid 内置本地搜索；启用后导航栏自动出现搜索按钮。
+search:
+  enable: true
+  path: /local-search.xml
+  generate_path: /local-search.xml
+  field: post
+  content: true
+
+# 底部与社交链接
+footer:
+  content: '© 2026 yfx · 使用 Hexo 与 Fluid 构建'
+  statistics:
+    enable: true
+    source: busuanzi
+    pv_format: '访问量 <span id="busuanzi_value_site_pv">-</span> 次'
+    uv_format: '访客 <span id="busuanzi_value_site_uv">-</span> 人'
+
+social:
+  - { icon: 'iconfont icon-github-fill', link: 'https://github.com/xiaoYunJG/wlb_blog', name: 'GitHub' }
+  - { icon: 'iconfont icon-mail-fill', link: 'mailto:1684054261@qq.com', name: 'Email' }
+
+# 返回顶部由 Fluid 内置按钮提供。
+scroll_down_arrow:
+  enable: true
+scroll_top_arrow:
+  enable: true

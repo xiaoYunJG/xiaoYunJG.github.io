@@ -1,0 +1,80 @@
+# ============================================================
+# 个人信息集中配置：修改本文件即可更新全站基础资料
+# ============================================================
+title: 我的技术博客
+subtitle: "记录编程、算法、Go、前端与人工智能学习"
+description: "yfx 的中文个人技术博客"
+keywords: "编程,算法,Go,前端,人工智能,技术博客"
+author: yfx
+language: zh-CN
+timezone: Asia/Shanghai
+
+# 部署地址集中配置：个人主页仓库 goCoder.github.io 的 root 必须为 /。
+# 若改为项目仓库，例如 YOUR_GITHUB_USERNAME.github.io/blog，请改为：
+# url: https://YOUR_GITHUB_USERNAME.github.io/blog
+# root: /blog/
+url: https://xiaoyunjg.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults: {}
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+# 文件夹
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: []
+
+# 写作
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+  noreferrer: true
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+
+# Markdown 与代码高亮
+syntax_highlighter: highlight.js
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+
+# 首页分页
+index_generator:
+  path: ''
+  per_page: 8
+  order_by: -date
+archive_generator:
+  per_page: 20
+  yearly: true
+  monthly: true
+tag_generator:
+  per_page: 20
+category_generator:
+  per_page: 20
+
+# 默认主题：主题的个性化配置统一放在 _config.fluid.yml
+theme: fluid
+
+# 部署由 .github/workflows/pages.yml 完成，不依赖 hexo-deployer-git。
+deploy:
+  type: ''

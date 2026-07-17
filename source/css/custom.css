@@ -1,0 +1,76 @@
+/* 仅放置项目级视觉微调；由 _config.fluid.yml 的 custom_css 加载。 */
+
+:root {
+  --gocoder-accent: #2f6fed;
+  --gocoder-accent-soft: rgba(47, 111, 237, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 留白克制、阅读宽度舒适，避免移动端横向溢出。 */
+.post-content,
+.markdown-body {
+  overflow-wrap: anywhere;
+}
+
+.post-content img,
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.45rem;
+}
+
+.post-content table,
+.markdown-body table {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.post-content pre,
+.markdown-body pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#navbar {
+  transition: background-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+#navbar.scrolling-navbar {
+  background-color: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 0.2rem 1.1rem rgba(15, 23, 42, 0.08);
+}
+
+.post-preview,
+.index-card {
+  border-radius: 0.7rem;
+}
+
+.post-preview:hover,
+.index-card:hover {
+  box-shadow: 0 0.6rem 1.6rem rgba(47, 111, 237, 0.1);
+}
+
+.navbar-brand,
+a {
+  text-underline-offset: 0.18em;
+}
+
+@media (prefers-color-scheme: dark) {
+  #navbar.scrolling-navbar {
+    background-color: rgba(20, 25, 35, 0.94);
+    box-shadow: 0 0.2rem 1.1rem rgba(0, 0, 0, 0.24);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .post-content table,
+  .markdown-body table {
+    font-size: 0.9rem;
+  }
+}

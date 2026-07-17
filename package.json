@@ -1,0 +1,32 @@
+{
+  "name": "gocoder-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "我的技术博客 - 基于 Hexo 与 Fluid 主题",
+  "scripts": {
+    "dev": "hexo server",
+    "clean": "hexo clean",
+    "build": "hexo generate",
+    "deploy": "npm run build && node -e \"console.log('构建完成。请推送到 main 分支，GitHub Actions 会自动部署到 GitHub Pages。')\""
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "hexo": {
+    "version": "8.1.2"
+  },
+  "dependencies": {
+    "@adobe/css-tools": "^4.5.0",
+    "hexo": "^8.1.1",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-search": "^2.4.3",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^7.0.1",
+    "hexo-renderer-stylus": "^3.0.1",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-fluid": "^1.9.8"
+  }
+}

@@ -37,13 +37,27 @@ html {
   overflow-x: auto;
 }
 
-#navbar {
+/* 深蓝灰实色导航栏：与首页 Banner 分离，阅读时始终保持清晰。 */
+#navbar,
+#navbar.scrolling-navbar {
+  background-color: #344258;
+  box-shadow: 0 0.14rem 0.8rem rgba(15, 23, 42, 0.2);
   transition: background-color 0.28s ease, box-shadow 0.28s ease;
 }
 
-#navbar.scrolling-navbar {
-  background-color: rgba(255, 255, 255, 0.94);
-  box-shadow: 0 0.2rem 1.1rem rgba(15, 23, 42, 0.08);
+#navbar .navbar-brand,
+#navbar .nav-link,
+#navbar .navbar-toggler,
+#navbar .search-form-toggle,
+#navbar .color-scheme-toggler {
+  color: #f8fafc !important;
+}
+
+#navbar .nav-link:hover,
+#navbar .nav-link:focus {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.3rem;
 }
 
 .post-preview,
@@ -62,9 +76,10 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
+  #navbar,
   #navbar.scrolling-navbar {
-    background-color: rgba(20, 25, 35, 0.94);
-    box-shadow: 0 0.2rem 1.1rem rgba(0, 0, 0, 0.24);
+    background-color: #28364a;
+    box-shadow: 0 0.14rem 0.8rem rgba(0, 0, 0, 0.32);
   }
 }
 

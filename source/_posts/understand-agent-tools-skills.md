@@ -2,7 +2,7 @@
 title: 从零理解 Agent、Tools 和 Skills
 date: 2026-07-08 11:10:00
 categories:
-  - 人工智能
+  - Agent
 tags:
   - Agent
   - Tools
